@@ -1,0 +1,133 @@
+@import 'reset.css';
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#clock {
+    text-align: center;
+    font-size: 120px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+#login-form {
+    text-align: center;
+}
+
+#login-form button {
+    display: none;
+}
+
+#login-form input::placeholder {
+    color: white;
+}
+
+#login-form input {
+    background: none;
+    width: 75%;
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+#login-form input,
+#greeting {
+    color: white;
+    font-size: 68px;
+    text-align: center;
+}
+
+#todo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#todo-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#todo-form label,
+#todo-form input {
+    font-size: 18px;
+}
+
+#todo-form input {
+    background: none;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+#todo-form input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#todo-list {
+    font-size: 16px;
+    width: 100%;
+}
+
+#todo-list li {
+    padding: 5px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#todo-list button {
+    color: rgba(255, 255, 255, 0.7);
+    background: none;
+    border: none;
+    margin-right: 10px;
+}
+
+
+#quote {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 15px;
+}
+
+#quote span:last-child {
+    margin-left: 10px;
+}
+
+#weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 18px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+#weather span:first-child {
+    margin-bottom: 3px;
+}
+
+.hidden {
+    display: none;
+}
